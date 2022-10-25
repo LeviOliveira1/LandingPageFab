@@ -1,59 +1,218 @@
-*{
-    padding: 0;
-    margin: 0;
+/*Configs Globais */
+* {
+  padding: 0;
+  margin: 0;
 }
-h1,p{
-    margin: 0;
+h1,
+p {
+  margin: 0;
 }
-p{
-    padding-top: 1.5rem;
+p {
+  padding-top: 1.5rem;
 }
-body{
-    font-family: 'Kumbh Sans', sans-serif;
-}
-.titleAndMenu{
-    display: flex;
-    align-items: center;
-    gap: 1.75rem;
-}
-#imgAvatar{
-    max-width: 45px;
-    margin-left: 1.5rem;
-                                                                                       
-}
-.titleAndMenu h1{
-    font-weight: 700;
-}
-.header header{
-    padding: 2rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.header{
-    border-bottom: 1px solid rgb(0, 0, 0);
-}
-.titleAndMenu p{
-    cursor: pointer;
-    opacity: 0.6;
-}
-.titleAndMenu p:hover{
-    color: rgb(245, 7, 7);
-}
-#imageSneaker{
-    max-width: 430px;
-    border-radius: 12px;
-    margin-bottom: 2rem;
-}
-.groupImages img{
- max-width: 80px;
- border-radius: 10px;
-}
-.groupImages{
-    display: flex;
-    gap: 2rem;
-}
+body {
+  font-family: "Kumbh Sans", sans-serif;
   
+}
+
+
+/*Menu bar */
+.titleAndMenu {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+#imgAvatar {
+  max-width: 45px;
+  margin-left: 1.5rem;
+}
+.titleAndMenu h1 {
+  font-weight: 700;
+}
+.header header {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  border-bottom: 1px solid rgb(0, 0, 0);
+}
+.titleAndMenu p {
+  cursor: pointer;
+  opacity: 0.6;
+}
+.titleAndMenu p:hover {
+  color: rgb(245, 7, 7);
+}
+
+
+/* Imagens dos Produtos*/
+.imagesSneakers{
+    float: left;   
+}
+#imageSneaker {
+  max-width: 430px;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+ 
+}
+.groupImages img {
+  max-width: 80px;
+  border-radius:7% ;
+}
+.groupImages {
+    display: flex;
+    gap: 2.3rem;
+}
+
+/* pseudo Primeiraimg*/
+#primeiraimg:hover{
+    opacity: 0.5;
+    border: 3px solid #f7730e;
+    border-radius: 6%;    
+}
+#primeiraimg:active{
+    scale: 2.2;
+    opacity: 1;
+}
+/*Primeira, fim.*/
 
 
 
+/* pseudo Segundaimg*/
+#segundaimg:hover{
+    opacity: 0.5;
+    border: 3px solid #f7730e;
+    border-radius:6%;
+}
+#segundaimg:active{
+    scale: 2.2;
+    opacity: 1;
+}
+/*Segunda, fim.*/
+
+
+
+/* pseudo Terceiraimg*/
+#terceiraimg:hover{
+    opacity: 0.5;
+    border: 3px solid #f7730e;
+    border-radius: 6%;
+}
+#terceiraimg:active{
+    scale: 2.2;
+    opacity: 1;
+}
+/*Terceira, fim.*/
+
+
+
+/* pseudo Quartaimg*/
+#quartaimg:hover{
+    opacity: 0.5;
+    border: 3px solid #be7237;
+    border-radius: 6%;
+}
+#quartaimg:active{
+    scale: 2.2;
+    opacity: 1;
+}
+/*Quarta, fim.*/
+
+
+
+/* Descrição do Produto*/
+.descriptionProduct{
+    margin-left: 35rem;
+    padding-top: 2rem;
+}
+.descriptionProduct p:first-child{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10pt;
+    font-weight: 700;
+    color: #f89142;
+}
+.descriptionProduct h1{
+    font-weight: 800;
+}
+.descriptionProduct :nth-child(3){
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+/*Mexendo com Preços*/
+.preco{
+  margin-left: 35rem;
+  padding-top: 1rem;
+  font-size: 1.6rem;
+  overflow: auto;
+}
+.preco p{
+   font-size: 12px;
+   font-weight: 700;
+   text-decoration: line-through;
+   opacity: 0.4;
+   padding-top: 5px;
+}
+.preco aside{
+  display: flex;
+  float: right;
+  padding: 1px 4px 1px 4px;
+  margin-right:37rem ;
+  margin-top: 0.7rem;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #f1e9e3;
+  color: #f86c00;
+  
+}
+#valor{
+  padding: 4px 10px 4px 10px;
+  border-radius: 8%;
+  border: none;
+  color: rgb(0, 0, 0);
+  
+}
+/* Fim */
+
+
+/*Ajustando Botões */
+.botao{
+  margin-left: 35rem;
+  padding-top: 2.5rem;
+ }
+ .botao img{
+  margin-right: 12px;
+ }
+
+
+.botaomenos{
+  padding: 4px 10px 4px 14px;
+  border-radius: 8%;
+  border: none;
+  background-color:#e9e9ed;
+  color: #be7237;
+  font-weight: 900;
+}
+.botaomais{
+  padding: 4px 10px 4px 10px;
+  border-radius: 8%;
+  border: none;  
+  background-color:#e9e9ed;
+  color: #be7237;
+  font-weight: 900;
+}
+
+.cart{
+  font-weight: 600;
+  background-color: #ff7d1b;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 70px 10px 70px;
+  letter-spacing: 1px;
+  
+}
