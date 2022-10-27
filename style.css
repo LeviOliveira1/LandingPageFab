@@ -64,6 +64,7 @@ body {
 .groupImages {
     display: flex;
     gap: 2.3rem;
+    padding-bottom: 5rem;
 }
 
 /* pseudo Primeiraimg*/
@@ -122,97 +123,76 @@ body {
 
 
 
-/* Descrição do Produto*/
-.descriptionProduct{
-    margin-left: 35rem;
-    padding-top: 2rem;
-}
-.descriptionProduct p:first-child{
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 10pt;
-    font-weight: 700;
-    color: #f89142;
-}
-.descriptionProduct h1{
-    font-weight: 800;
-}
-.descriptionProduct :nth-child(3){
-  opacity: 0.6;
-  font-size: 14px;
-}
-
-/*Mexendo com Preços*/
-.preco{
-  margin-left: 35rem;
-  padding-top: 1rem;
-  font-size: 1.6rem;
-  overflow: auto;
-}
-.preco p{
-   font-size: 12px;
-   font-weight: 700;
-   text-decoration: line-through;
-   opacity: 0.4;
-   padding-top: 5px;
-}
-.preco aside{
+.contentSneaker{
   display: flex;
-  float: right;
-  padding: 1px 4px 1px 4px;
-  margin-right:37rem ;
-  margin-top: 0.7rem;
-  border-radius: 5px;
-  font-size: 12px;
+  gap: 5rem;
+  
+}
+.title{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem ;
+}
+.title h2{
+  color: hsl(26, 100%,55%);
+  font-size: 1rem;
   font-weight: 700;
-  background-color: #f1e9e3;
-  color: #f86c00;
-  
-}
-#valor{
-  padding: 4px 10px 4px 10px;
-  border-radius: 8%;
-  border: none;
-  color: rgb(0, 0, 0);
-  
-}
-/* Fim */
-
-
-/*Ajustando Botões */
-.botao{
-  margin-left: 35rem;
-  padding-top: 2.5rem;
- }
- .botao img{
-  margin-right: 12px;
- }
-
-
-.botaomenos{
-  padding: 4px 10px 4px 14px;
-  border-radius: 8%;
-  border: none;
-  background-color:#e9e9ed;
-  color: #be7237;
-  font-weight: 900;
-}
-.botaomais{
-  padding: 4px 10px 4px 10px;
-  border-radius: 8%;
-  border: none;  
-  background-color:#e9e9ed;
-  color: #be7237;
-  font-weight: 900;
 }
 
-.cart{
-  font-weight: 600;
-  background-color: #ff7d1b;
+title h1{
+  font-size: 3.75rem;
+  font-weight: 700;
+}
+
+.prices{
+  display: flex;
+  align-items: center;
+  gap:2rem;
+}
+.buttons{
+  display: flex;
+  gap: 2rem;
+}
+
+.descriptionAndPrice{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+
+}
+.buttons button{
+  display: flex;
+  gap: 1rem;
+  border: 0;
+  background-color: hsl(26,100%,55%);
   color: #fff;
-  border: none;
-  border-radius: 10px;
-  padding: 10px 70px 10px 70px;
-  letter-spacing: 1px;
-  
+  font-weight: 700;
+  padding: 0.875rem 3rem ;
+  border-radius: 0.5rem;
+
+}
+.buttonCounter button{
+  border: 0;
+  padding: 0.5rem;
+  background-color: hsl(22, 14%, 75%);
+  color: hsl(26, 100%,55%);
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin: 0;
+}
+.buttonCounter input{
+  width: 4rem;
+  border: 0;
+  padding: 0.5rem;
+  background-color: hsl(22, 14%, 75%);
+  color: hsl(26, 100%,55%);
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin: 0;
+  color: #000;
+  text-align: center;
+}
+.buttonCounter{
+  display: flex;
 }
